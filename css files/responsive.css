@@ -1,0 +1,81 @@
+@media only screen and (max-width:700px) {
+    body {
+        /* background-color: red; */
+    }
+
+    .carousel-item {
+        height: auto;
+    }
+
+    div.ranger-one {
+        height: auto;
+        padding: 50px 8px;
+        flex-direction: column;
+        color: black;
+        margin-bottom: 40px;
+    }
+
+    div.ranger-one .box {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .ael-three-grade {
+        text-align: center;
+        text-transform: capitalize;
+        /* border: 2px solid blue; */
+        padding: 20px 30px;
+        margin-bottom: 40px;
+    }
+
+    .alla-kareem-four button {
+        width: 50%;
+    }
+
+    .nera-oka-five .text {
+        width: 100%;
+    }
+    .nera-oka-five .boxes .box{
+        background-color: var(--b2);
+        color: black;
+        width: 45%;
+}
+.xampp-apche-six .boxes{
+    flex-direction: column;
+}
+.xampp-apche-six .boxes .card{
+    width: 90%;
+    margin-bottom: 20px;
+}
+.analytic-laber-seven .parent{
+    flex-direction: column-reverse;
+}
+.analytic-laber-seven .images{
+    width: 100%;
+}
+.analytic-laber-seven .text{
+    width: 100%;
+}
+.div-offer-mounth{
+    padding: 5px;
+}
+.div-offer-mounth h1{
+    font-size: 4em;
+}
+.div-offer-mounth h3{
+    font-size: 3em;
+}
+.carousel-control-prev-icon{
+    font-size: 2em;
+}
+.carousel-control-next-icon{
+    font-size: 2em;
+}
+
+.carousel-control-prev-{
+    font-size: 2em;
+}
+.carousel-control-next-{
+    font-size: 2em;
+}
+}
