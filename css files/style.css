@@ -99,7 +99,7 @@ body {
 
 div.ranger-one {
 
-    background-color: var(--b2);
+    background-color: var(--b0);
     height: 20vh;
     padding: 130px 10px;
 
@@ -132,7 +132,7 @@ div.ranger-one .box {
 }
 
 .alla-kareem-four {
-    background-color: var(--b2);
+    background-color: var(--b0);
     height: auto;
     padding: 40px 20px;
 
@@ -160,13 +160,13 @@ div.ranger-one .box {
 
 .alla-kareem-four .allbox .card {
     margin-bottom: 20px;
-    background-color: var(--c1);
+    background-color: var(--b1);
 }
 
 .alla-kareem-four button {
     padding: 10px 20px;
     background-color: var(--c1);
-    color: black;
+    color: white;
     font-weight: 700;
     border-radius: 20px;
     border: none;
@@ -181,7 +181,7 @@ div.ranger-one .box {
 }
 
 .nera-oka-five .text {
-    color: var(--c1);
+    color: var(--b2);
     width: 60%;
     padding: 50px 20px;
     margin-bottom: 30px;
@@ -196,7 +196,7 @@ div.ranger-one .box {
 }
 
 .nera-oka-five .boxes .box {
-    background-color: var(--b2);
+    background-color: var(--b0);
     color: black;
     width: 40%;
     text-align: center;
@@ -237,8 +237,8 @@ div.ranger-one .box {
 }
 
 .xampp-apche-six .boxes .card h5 {
-    background-color: var(--b2);
-    color: black;
+    background-color: var(--b0);
+    color:  var(--c1);
     padding: 5px;
 }
 
@@ -254,7 +254,7 @@ div.ranger-one .box {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--b1);
+    background-color: var(--b0);
     /* padding: 0px 30px; */
     overflow: hidden;
     border-radius: 20px;
@@ -296,7 +296,7 @@ div.ranger-one .box {
 }
 
 .our-agents-eight .card {
-    background-color: var(--b2);
+    background-color: var(--b1);
 }
 
 .div-offer-mounth {
@@ -305,7 +305,7 @@ div.ranger-one .box {
     background-size: cover;
     height: auto;
     height: 80vh;
-    color: var(--c1);
+    color: var(--b2);
     text-align: center;
     padding: 20px;
 
@@ -330,6 +330,7 @@ div.ranger-one .box {
 
 .rev-user-tenth {
     background-color: var(--c1);
+    color: white;
     padding: 80px 50px;
 
     height: auto;
@@ -425,6 +426,6 @@ div.ranger-one .box {
 }
 
 footer {
-    background-color: var(--b2);
+    background-color: var(--b0);
     padding: 10px 20px;
 }
