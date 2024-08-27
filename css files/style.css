@@ -1,31 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=Playwrite+AU+TAS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* color variables */
 :root {
-    /* --c1: #f0ece2;
-    --b0: #dfd3c3a8;
-    --b1: #dfd3c3;
-    --b2: #c7b198;
-    --b3: #596e79; */
+    /* --c1: #131842;  
+    --b0: #E68369;   
+    --b1: #ECCEAE;   
+    --b2: #FAFAFA;   
+    --b3: #596e79;    */
 
-    --c1: #131842
-;
-    --b0: #E68369;
-    --b1: #ECCEAE;
-    --b2: #FBF6E2;
-    --b3: #596e79;
+    --background: #e9f08f;
+    --heading: #9f3dee;
+    --pink: #ee617a;
 
+    --hover: #ffd61d;
 
-    /* --c1: #ffe600;
-    --b0: #ffffff;
-    --b1: #bae8e8; */
-    /* --b2: #121435; */
-    /* --b3: #ff0000; */
-
-    /* #121435
-    #faf9f0
-    #edebca
-    #ff5722 */
 }
 
 * {
@@ -35,24 +23,32 @@
 }
 
 body {
-    color: black;
-    background-color: var(--b2);
-    font-family: "Poppins", sans-serif;
+    background-color: var(--background);
+    color: var(--heading);
+    font-family: "Jost", sans-serif;
 }
 
-.navbar-collapse ul li {
+.navbar-collapse ul li a {
     font-weight: 600;
-    color: var(--b2);
-    transition-duration: 0.9s;
+    color: var(--background);
+    transition-duration: 0.2s;
 }
 
-.navbar-collapse ul li:hover {
-    color: var(--b2);
-    text-decoration: underline var(--b3);
+.navbar-collapse ul li a:hover {
+    color: var(--hover);
+    /* text-decoration: underline var(--b3); */
 }
 
 .carousel-item {
     height: 80vh;
+}
+
+.carousalImg {
+    background-color: black;
+}
+
+.carousel-item img {
+    opacity: 0.5;
 }
 
 .carousel-control-prev-icon {
@@ -78,19 +74,28 @@ body {
 }
 
 .navbar {
-    background-color: var(--c1);
+    background-color: var(--heading);
     color: white;
 }
 
-.navbar a{
+.navbar-brand {
+    color: var(--hover);
+    font-weight: bolder;
+}
+
+.navbar-brand:hover {
+    color: var(--background);
+}
+
+/* .navbar a{
     color: white;
 }
 .navbar a:hover{
-    color: var(--b0);
+    color: var(--c1);
 }
 .navbar a.active{
     color: var(--b2);
-}
+} */
 
 .lead {
     width: 6%;
@@ -99,21 +104,32 @@ body {
 
 div.ranger-one {
 
-    background-color: var(--b0);
+    background-color: var(--heading);
     height: 20vh;
     padding: 130px 10px;
 
     justify-content: space-around;
     align-items: center;
 
-    color: black;
+    color: var(--background);
     margin-bottom: 40px;
 
 
 }
 
+.carousel-caption h5 {
+    font-size: 5em;
+    color: var(--hover);
+    /* text-shadow: 0px 5px 20px red; */
+}
+
 div.ranger-one .box {
     width: 25%;
+    background-color: var(--pink);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 3px var(--pink);
+    color: var(--background);
 }
 
 .ael-three-grade {
@@ -132,7 +148,7 @@ div.ranger-one .box {
 }
 
 .alla-kareem-four {
-    background-color: var(--b0);
+    background-color: var(--heading);
     height: auto;
     padding: 40px 20px;
 
@@ -144,6 +160,9 @@ div.ranger-one .box {
 
 .alla-kareem-four h1 {
     text-align: center;
+    color: var(--hover);
+    font-weight: bolder;
+    text-transform: uppercase;
     margin-bottom: 30px;
 }
 
@@ -160,13 +179,16 @@ div.ranger-one .box {
 
 .alla-kareem-four .allbox .card {
     margin-bottom: 20px;
-    background-color: var(--b1);
+    background-color: var(--hover);
+    /* margin-bottom: 20px; */
+    /* box-shadow: 0px 10px 20px 1px var(--pink); */
 }
 
 .alla-kareem-four button {
     padding: 10px 20px;
-    background-color: var(--c1);
-    color: white;
+    background-color: var(--hover);
+
+    color: black;
     font-weight: 700;
     border-radius: 20px;
     border: none;
@@ -181,7 +203,7 @@ div.ranger-one .box {
 }
 
 .nera-oka-five .text {
-    color: var(--b2);
+    color: var(--heading);
     width: 60%;
     padding: 50px 20px;
     margin-bottom: 30px;
@@ -196,8 +218,8 @@ div.ranger-one .box {
 }
 
 .nera-oka-five .boxes .box {
-    background-color: var(--b0);
-    color: black;
+    background-color: var(--heading);
+    color: var(--background);
     width: 40%;
     text-align: center;
     border-radius: 5px;
@@ -237,13 +259,13 @@ div.ranger-one .box {
 }
 
 .xampp-apche-six .boxes .card h5 {
-    background-color: var(--b0);
-    color:  var(--c1);
+    background-color: var(--background);
+    color: var(--c1);
     padding: 5px;
 }
 
 .analytic-laber-seven {
-    background-color: var(--b2);
+    background-color: var(--background);
     padding: 60px 20px;
     height: auto;
     margin-bottom: 20px;
@@ -254,7 +276,7 @@ div.ranger-one .box {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--b0);
+    background-color: var(--heading);
     /* padding: 0px 30px; */
     overflow: hidden;
     border-radius: 20px;
@@ -272,22 +294,32 @@ div.ranger-one .box {
 
 .analytic-laber-seven .text {
     /* border: 1px solid red; */
+    color: var(--hover);
     width: 50%;
     padding: 20px;
     height: 100%
 }
 
 .analytic-laber-seven .text button {
-    background-color: var(--b2);
+    background-color: var(--pink);
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
+    color: var(--background);
 }
 
 .our-agents-eight {
     padding: 50px 20px;
     /* border: 1px solid red; */
 }
+.our-agents-eight .legger{
+    padding: 50px 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 .our-agents-eight h1 {
     text-align: center;
@@ -296,7 +328,16 @@ div.ranger-one .box {
 }
 
 .our-agents-eight .card {
-    background-color: var(--b1);
+    background-color: var(--heading);
+    box-shadow: 0px 0px 20px 1px var(--heading);
+    color: var(--hover);
+    margin-bottom: 40px;
+}
+
+
+.rander {
+    color: rgb(62, 1, 3);
+    text-decoration: underline;
 }
 
 .div-offer-mounth {
@@ -308,7 +349,7 @@ div.ranger-one .box {
     color: var(--b2);
     text-align: center;
     padding: 20px;
-
+    color: var(--hover);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,7 +362,7 @@ div.ranger-one .box {
     padding: 10px 40px;
     border: none;
     border-radius: 20px;
-    background-color: var(--b2);
+    background-color: var(--hover);
 }
 
 .render-sector-ninght {
@@ -329,8 +370,8 @@ div.ranger-one .box {
 }
 
 .rev-user-tenth {
-    background-color: var(--c1);
-    color: white;
+    /* background-color: var(--hover); */
+    color: var(--heading);
     padding: 80px 50px;
 
     height: auto;
@@ -426,6 +467,7 @@ div.ranger-one .box {
 }
 
 footer {
-    background-color: var(--b0);
+    background-color: var(--heading);
+    color: var(--background);
     padding: 10px 20px;
 }

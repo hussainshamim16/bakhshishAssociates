@@ -13,34 +13,35 @@
   <link rel="stylesheet" href="./css files/style.css">
   <link rel="stylesheet" href="./css files/classes.css">
   <link rel="stylesheet" href="./css files/responsive.css">
-  <link rel="shortcut icon" href="./images/nav-logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
 
 <body>
   <!-- nav -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid p-2.5">
-      <a class="navbar-brand" href="#">
-        <img src="./images/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top lead ">
+      <a class="navbar-brand" href="./index.html">
+        <!-- <img src="./images/logo.png" alt="Logo" width="30" class="d-inline-block align-text-top lead "> -->
         Bakhshish Associates
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span> -->
+        <i class="fa-solid fa-bars-staggered"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./pages/signup.html">Home</a>
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Properties</a>
+            <a class="nav-link" href="#work">Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#properties">Properties</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="#offers">Offers</a>
           </li>
         </ul>
       </div>
@@ -48,16 +49,28 @@
   </nav>
     <!-- nav -->
   <!-- <h1>Bakhshish Associates</h1> -->
-  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-inner" id = "home">
+      <div class="carousel-item carousalImg active">
         <img src="./images/STR-2.jpg" class="d-block w-100" alt="carousel-image">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Bakhshish Associates</h5>
+          <p>Your trusted partner in real estate.</p>
+        </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item carousalImg">
         <img src="./images/str-1.jpg" class="d-block w-100" alt="carousel-image">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Find Your Dream Property</h5>
+          <p>Explore our wide range of properties.</p>
+        </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item carousalImg">
         <img src="./images/str-3.jpg" class="d-block w-100" alt="carousel-image">
+              <div class="carousel-caption d-none d-md-block">
+        <h5>Expert Agents at Your Service</h5>
+        <p>Professional and dedicated agents to assist you.</p>
+      </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -76,26 +89,27 @@
   <!-- sc2 -->
   <div class="ranger-one f">
     <div class="box">
-      <h1>82+</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quasi obcaecati eos veniam natus ab!</p>
+      <h1>482+</h1>
+      <p>With over successful projects .elit Inventore, quasi obcaecati eos veniam natus ab!</p>
     </div>
 
     <div class="box">
-      <h1>36+</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quasi obcaecati eos veniam natus ab!</p>
+      <h1>17+</h1>
+      <p>years of experience. consectetur adipisicing elit. Inventore, quasi obcaecati eos veniam natus ab!</p>
     </div>
 
     <div class="box">
-      <h1>29+</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quasi obcaecati eos veniam natus ab!</p>
+      <h1>300+</h1>
+      <p>
+        satisfied clients, Bakhshish Associates stands as a symbol of trust and excellence in the real estate industry
+      </p>
     </div>
 
   </div>
   <!-- we work for you -->
-  <div class="ael-three-grade">
+  <div class="ael-three-grade" id="work">
     <h1>we work for you</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ut porro cupiditate <br>molestias earum cum numquam
-      at facere, pariatur repudiandae!</p>
+    <p>At Bakhshish Associates, we work tirelessly to ensure <br>that you find the perfect property that meets your needs. Our dedicated team is here to guide you <br> every step of the way, making the process smooth and hassle-free!</p>
 
     <div class="ranger-one f">
       <div class="box">
@@ -119,7 +133,7 @@
     </div>
   </div>
   <!-- four -->
-  <div class="alla-kareem-four">
+  <div class="alla-kareem-four" id="properties">
     <h1>Popular Properties</h1>
     <div class="allbox">
       <div class="card" style="width: 18rem;">
@@ -242,15 +256,41 @@
   </div>
   <!-- offf -->
   <div class="our-agents-eight">
-    <h1>our agents</h1>
+    <h1>our team</h1>
+    <div class="mane">
+      <div class="row row-cols-1 row-cols-md-4 g-4 legger">
+        <div class="col">
+          <div class="card xrae">
+            <img src="./images/faraz.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Faraz Ahmed Madni</h5>
+              <h5 class="card-title rander">Director</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card xrae">
+            <img src="./images/suhailbhai-removebg-preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sohail Ahmed Ansari</h5>
+              <h5 class="card-title rander">Assistant Director</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="mane">
       <div class="row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
           <div class="card">
             <img src="./images/tMembar-0.jfif" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Muhammad Ali</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              <h5 class="card-title">Faraz Ahmed Madni</h5>
+                       <h5 class="card-title rander">Advisor</h5>             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
           </div>
@@ -259,7 +299,19 @@
           <div class="card">
             <img src="./images/tMembar-0.jfif" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Rehman Khan</h5>
+              <h5 class="card-title">Sohail Ahmed Ansari</h5>
+                       <h5 class="card-title rander">Advisor</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./images/saim.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">M. Saim Sarosh</h5>
+              <h5 class="card-title rander">Second Director</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
@@ -270,25 +322,17 @@
             <img src="./images/raza.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Raza Shakeel</h5>
+              <h5 class="card-title rander">Advisor</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./images/saim.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">M. Saim Sarosh</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="div-offer-mounth">
+  <!-- offf -->
+  <div class="div-offer-mounth" id="offers">
     <h1>Best Offers</h1>
     <h3>Of <span id="month">July</span></h3>
     <p>Xorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,<br> nihil voluptate repudiandae perspiciatis
@@ -329,7 +373,7 @@
         <div class="carousel-item active">
           <p>Beatae quo <br>error enim ex sint inventore maiores at architecto libero, eos itaque iure cum <br> deserunt
             animi hic a nihil ipsa quas!</p>
-          <h1>Babar Azam</h1>
+          <h1>Yasir shaikh</h1>
           <p><i class="fa-solid fa-star" style="color: #c7b198;"></i> <i class="fa-solid fa-star"
               style="color: #c7b198;"></i> <i class="fa-solid fa-star" style="color: #c7b198;"></i></p>
         </div>
