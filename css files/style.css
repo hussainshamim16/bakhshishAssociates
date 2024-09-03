@@ -8,11 +8,11 @@
     --b2: #FAFAFA;   
     --b3: #596e79;    */
 
-    --background: #e9f08f;
-    --heading: #9f3dee;
-    --pink: #ee617a;
+    --background: hwb(158 60% 3% / 0.904);
+    --heading: #002e1d;
+    --pink: #024629;
 
-    --hover: #ffd61d;
+    --hover: #b3ffe3;
 
 }
 
