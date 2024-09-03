@@ -7,6 +7,10 @@
         height: auto;
     }
 
+    .carousel-caption h5{
+font-size: 1.2em;    }
+    .carousel-caption p{
+font-size: 0.7em;    }
    
     div.ranger-one {
         height: auto;
@@ -81,5 +85,20 @@
 }
 .carousel-control-next-{
     font-size: 2em;
+}
+.nera-oka-five .text h1{
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--hover);
+}
+.nera-oka-five .text p{
+    /* font-size: 3em; */
+    /* font-weight: 800; */
+    color: var(--hover);
+}
+
+.nera-oka-five .boxes .box {
+    background-color: var(--heading);
+    color: var(--hover);
 }
 }
