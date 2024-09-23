@@ -107,15 +107,17 @@ div.ranger-one {
     background-color: var(--heading);
     height: 20vh;
     padding: 130px 10px;
-
+    
     justify-content: space-around;
     align-items: center;
-
+    /* flex-wrap: wrap; */
     color: var(--background);
     margin-bottom: 40px;
-
-
+    
+    
 }
+
+
 
 .carousel-caption h5 {
     font-size: 5em;
