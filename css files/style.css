@@ -132,6 +132,13 @@ div.ranger-one .box {
     border-radius: 20px;
     box-shadow: 0px 0px 50px 3px var(--pink);
     color: var(--background);
+    cursor: pointer;
+    transition-duration: 5s;
+    transition: 2s;
+}
+div.ranger-one .box:hover {
+    width: 30%;
+    background-color: var(--heading);
 }
 
 .ael-three-grade {
@@ -183,7 +190,13 @@ div.ranger-one .box {
     margin-bottom: 20px;
     background-color: var(--hover);
     /* margin-bottom: 20px; */
+    transition: all;
+    transition-duration: 1s;
     /* box-shadow: 0px 10px 20px 1px var(--pink); */
+}
+.alla-kareem-four .allbox .card:hover {
+    color: white;
+    background-color: var(--pink);
 }
 
 .alla-kareem-four button {
@@ -340,7 +353,7 @@ div.ranger-one .box {
 
 
 .rander {
-    color: rgb(62, 1, 3);
+    color: lightgreen;
     text-decoration: underline;
 }
 
