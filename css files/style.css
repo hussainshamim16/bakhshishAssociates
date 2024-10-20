@@ -105,11 +105,12 @@ body {
 div.ranger-one {
 
     background-color: var(--heading);
-    height: 20vh;
+    height: auto;
     padding: 130px 10px;
     
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     /* flex-wrap: wrap; */
     color: var(--background);
     margin-bottom: 40px;
@@ -117,18 +118,27 @@ div.ranger-one {
     
 }
 
+div.ranger-two {
 
-
-.carousel-caption h5 {
-    font-size: 5em;
-    color: var(--hover);
-    /* text-shadow: 0px 5px 20px red; */
+    background-color: var(--heading);
+    height: auto;
+    padding: 40px 10px;
+    
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    color: var(--background);
+    margin-bottom: 40px;
+    
+    
 }
 
-div.ranger-one .box {
-    width: 25%;
+div.ranger-two .box {
+    width: 30%;
     background-color: var(--pink);
-    padding: 20px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 0px 0px 50px 3px var(--pink);
     color: var(--background);
@@ -136,8 +146,31 @@ div.ranger-one .box {
     transition-duration: 5s;
     transition: 2s;
 }
+
+
+.carousel-caption h5 {
+    font-size: 5em;
+    color: var(--hover);
+
+    /* text-shadow: 0px 5px 20px red; */
+}
+
+div.ranger-one .box {
+    width: 40%;
+    background-color: var(--pink);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px 3px var(--pink);
+    color: var(--background);
+    cursor: pointer;
+    transition-duration: 5s;
+    transition: 2s;
+}
+
+
 div.ranger-one .box:hover {
-    width: 30%;
+    width: 45%;
     background-color: var(--heading);
 }
 
@@ -189,15 +222,65 @@ div.ranger-one .box:hover {
 .alla-kareem-four .allbox .card {
     margin-bottom: 20px;
     background-color: var(--hover);
-    /* margin-bottom: 20px; */
-    transition: all;
-    transition-duration: 1s;
-    /* box-shadow: 0px 10px 20px 1px var(--pink); */
+    transition: all 0.4s ease-in-out; /* Smoother transition effect */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    overflow: hidden; /* Ensures content doesn't overflow the card */
 }
+
+.alla-kareem-four .allbox .card button{
+    /* background-color: red; */
+    background-color: var(--heading);
+    display: block;
+    width: 100%;
+}
+
+/* Hover effect */
 .alla-kareem-four .allbox .card:hover {
     color: white;
     background-color: var(--pink);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    transition: all 0.3s ease-in-out; /* Faster hover animation */
 }
+
+/* Image styling inside the card (optional) */
+.alla-kareem-four .allbox .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.alla-kareem-four .allbox .card:hover img {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Text content styling */
+.alla-kareem-four .allbox .card .card-body {
+    padding: 20px;
+    text-align: center; /* Centered text for better alignment */
+}
+
+.alla-kareem-four .allbox .card .card-body p {
+    margin-bottom: 15px;
+    color: var(--text-color);
+    /* background-color: red; */
+    text-align: left;
+}
+
+/* Button Styling */
+.alla-kareem-four .allbox .card .btn {
+    /* background-color: red; */
+    color: white;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth button animation */
+}
+
+.alla-kareem-four .allbox .card .btn:hover {
+    background-color: var(--hover); /* Button hover color */
+    color: black;
+}
+
 
 .alla-kareem-four button {
     padding: 10px 20px;

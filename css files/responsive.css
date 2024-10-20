@@ -24,6 +24,10 @@ font-size: 0.7em;    }
         width: 90%;
         margin-bottom: 30px;
     }
+    div.ranger-two .box {
+        width: 90%;
+        margin-bottom: 30px;
+    }
 
     .ael-three-grade {
         text-align: center;
