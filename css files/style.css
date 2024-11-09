@@ -99,6 +99,7 @@ body {
 }
 .navbar a:hover{
     color: var(--c1);
+    
 }
 .navbar a.active{
     color: var(--b2);
