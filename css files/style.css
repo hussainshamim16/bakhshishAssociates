@@ -15,7 +15,7 @@
     --hover: #b3ffe3;
 
 
-/* 
+    /* 
     --text: #fff;
     --bg: #2b313e;
     --bg1: #f1d981;
@@ -399,6 +399,89 @@ div.ranger-one .box:hover {
     /* padding: 0px 30px; */
     overflow: hidden;
     border-radius: 20px;
+    text-align: left;
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: var(--heading); */
+
+    /* padding: 0px 30px; */
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.partner .images {
+    width: 10%;
+    height: 500px;
+}
+
+.partner p {
+    color: black;
+}
+
+.partner h1 {
+    color: black;
+}
+
+.about {
+    /* text-align: center; */
+    /* display: flex; */
+    width: 100%;
+    height: 100vh;
+    /* background-color: #002e1d; */
+    /* justify-content: space-around; */
+}
+.about h1{
+    text-align: center;
+ margin-bottom: 20px;
+ font-size: 3.5em;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.about .content {
+    text-align: left;
+    width: 40%;
+    background-color: var(--heading);
+    color: white;
+    border-radius: 20px;
+    padding: 20px 40px;
+    height: 80%;
+box-shadow: -15px 30px 30px 1px #00000079;
+}
+.about .content h1{
+text-align: left;
+}
+
+.about .images {
+    width: 40%;
+    background-color: red;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 100%;
+    position: sticky;
+    box-shadow: -15px 30px 30px 1px #00000079;
+
+}
+
+.about .images img {
+    transition-duration: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+.about .images img:hover {
+    width: 104%;
+    height: 100%;
 }
 
 .analytic-laber-seven .images {

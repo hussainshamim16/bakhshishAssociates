@@ -7,11 +7,14 @@
         height: auto;
     }
 
-    .carousel-caption h5{
-font-size: 1.2em;    }
-    .carousel-caption p{
-font-size: 0.7em;    }
-   
+    .carousel-caption h5 {
+        font-size: 1.2em;
+    }
+
+    .carousel-caption p {
+        font-size: 0.7em;
+    }
+
     div.ranger-one {
         height: auto;
         padding: 50px 8px;
@@ -24,9 +27,15 @@ font-size: 0.7em;    }
         width: 90%;
         margin-bottom: 30px;
     }
+
     div.ranger-two .box {
         width: 90%;
         margin-bottom: 30px;
+    }
+
+    div.ranger-one .box:hover{
+        background-color: red;
+        width: 100%;
     }
 
     .ael-three-grade {
@@ -44,65 +53,104 @@ font-size: 0.7em;    }
     .nera-oka-five .text {
         width: 100%;
     }
-    .nera-oka-five .boxes .box{
+
+    .nera-oka-five .boxes .box {
         background-color: var(--b2);
         color: black;
         width: 45%;
-}
-.navbar-toggler{
-    color: white;
-}
-.xampp-apche-six .boxes{
-    flex-direction: column;
-}
-.xampp-apche-six .boxes .card{
-    width: 90%;
-    margin-bottom: 20px;
-}
-.analytic-laber-seven .parent{
-    flex-direction: column-reverse;
-}
-.analytic-laber-seven .images{
-    width: 100%;
-}
-.analytic-laber-seven .text{
-    width: 100%;
-}
-.div-offer-mounth{
-    padding: 5px;
-}
-.div-offer-mounth h1{
-    font-size: 4em;
-}
-.div-offer-mounth h3{
-    font-size: 3em;
-}
-.carousel-control-prev-icon{
-    font-size: 2em;
-}
-.carousel-control-next-icon{
-    font-size: 2em;
-}
+    }
 
-.carousel-control-prev-{
-    font-size: 2em;
-}
-.carousel-control-next-{
-    font-size: 2em;
-}
-.nera-oka-five .text h1{
-    font-size: 3em;
-    font-weight: 800;
-    color: var(--hover);
-}
-.nera-oka-five .text p{
-    /* font-size: 3em; */
-    /* font-weight: 800; */
-    color: var(--hover);
-}
+    .navbar-toggler {
+        color: white;
+    }
 
-.nera-oka-five .boxes .box {
-    background-color: var(--heading);
-    color: var(--hover);
-}
+    .xampp-apche-six .boxes {
+        flex-direction: column;
+    }
+
+    .xampp-apche-six .boxes .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .analytic-laber-seven .parent {
+        flex-direction: column-reverse;
+    }
+
+    .analytic-laber-seven .images {
+        width: 100%;
+    }
+
+    .analytic-laber-seven .text {
+        width: 100%;
+    }
+
+    .div-offer-mounth {
+        padding: 5px;
+    }
+
+    .div-offer-mounth h1 {
+        font-size: 4em;
+    }
+
+    .div-offer-mounth h3 {
+        font-size: 3em;
+    }
+
+    .carousel-control-prev-icon {
+        font-size: 2em;
+    }
+
+    .carousel-control-next-icon {
+        font-size: 2em;
+    }
+
+    .carousel-control-prev- {
+        font-size: 2em;
+    }
+
+    .carousel-control-next- {
+        font-size: 2em;
+    }
+
+    .nera-oka-five .text h1 {
+        font-size: 3em;
+        font-weight: 800;
+        color: var(--hover);
+    }
+
+    .nera-oka-five .text p {
+        /* font-size: 3em; */
+        /* font-weight: 800; */
+        color: var(--hover);
+    }
+
+    .nera-oka-five .boxes .box {
+        background-color: var(--heading);
+        color: var(--hover);
+    }
+
+    .about {
+        /* background-color: red; */
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .about h1 {
+        font-size: 3em;
+    }
+
+    .about .main {
+        flex-direction: column;
+    }
+
+    .about .content {
+        width: 90%;
+    }
+
+    .about .images {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
 }
