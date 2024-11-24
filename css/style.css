@@ -11,14 +11,16 @@
     --dark: #070c16;
 }
 
-*{
+* {
     font-family: "Lexend", sans-serif;
 }
-h1{
+
+h1 {
     /* color: red; */
     font-family: "Archivo Black", sans-serif;
     text-transform: capitalize;
 }
+
 /* dark blue #2C3240 */
 /* yellow blue #DFC66C */
 /* dark yellow #DFC66C */
@@ -65,7 +67,8 @@ h1{
 /* my css */
 
 
-.btn.btn-primary, .btn.btn-secondary {
+.btn.btn-primary,
+.btn.btn-secondary {
     background: #2C3240;
     border: 2px solid #DFC66C;
     color: white;
@@ -81,11 +84,11 @@ h1{
 
 div.ranger-two {
 
-display: flex;
-align-items: center;
-justify-content: space-around;
-flex-wrap: wrap;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 
     height: auto;
     padding: 10px 10px;
@@ -233,7 +236,7 @@ div.ranger-two .box {
         padding: 0;
     }
 
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -262,7 +265,7 @@ div.ranger-two .box {
         opacity: 0;
         visibility: hidden;
         transition: .5s;
-        
+
     }
 
     .navbar .nav-item:hover .dropdown-menu {
@@ -316,7 +319,7 @@ div.ranger-two .box {
     }
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: #DDDDDD;
 }
 
@@ -445,6 +448,87 @@ div.ranger-two .box {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+
+    .carousalImg img {}
+
+    /* .carousel-caption h5 {
+        font-size: 2px;
+    } */
+}
+
+@media (max-width: 600px) {
+    .testimonial-carousel {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .fedral{
+        /* background-color: red; */
+        padding: 0px;
+    }
+    .fedral .container{
+        /* background-color: yellow; */
+        padding: 20px;
+    }
+    .fedral .container .tary{
+        /* background-color: black; */
+        padding: 0px;
+    }
+    .fedral .container .tester{
+        width: 100%;
+        /* background-color: black; */
+        padding: 0px;
+    }
+    .fedral .container .tester .chest{
+        width: 100%;
+        /* background-color: red; */
+        padding: 0px;
+    }
+
+    .carousel-item {
+        height: 60vh;
+    }
+
+    .carousel-item img {
+        height: 100%;
+    }
+    .carousel-control-prev-,.carousel-control-next-{ 
+        font-size: 25px;
+    }
+   
+    .ranger-two{
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* border: 1px solid red; */
+    }
+    .container-xxl .Testimonial{
+        /* background-color: red; */
+        width: 100%;
+        padding: none;
+    }
+    .test{
+        /* border: 1px solid yellow; */
+        padding: 0px;
+    }
+    .test .redaar {
+        /* background-color: yellow; */
+    }
+    .test p,h6,small{
+        padding: 0px;
+        font-size: 10px;
+    }
+ 
+    .ranger-two div.box{
+        margin-bottom: 20px;
+      width: 100%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 24px;
+        /* color: red; */
+        text-align: center;
+
+    }
 }
 
 .testimonial-carousel .testimonial-item .border {
@@ -492,7 +576,7 @@ div.ranger-two .box {
     align-items: center;
     justify-content: center;
     color: var(--light);
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 35px;
     transition: .3s;
 }
@@ -527,7 +611,7 @@ div.ranger-two .box {
 }
 
 .footer .form-control {
-    border-color: rgba(255,255,255,0.5);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 .footer .copyright {
