@@ -596,6 +596,16 @@ div.ranger-two .box {
     text-transform: capitalize;
     transition: .3s;
 }
+/* .footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+} */
 
 .footer .btn.btn-link::before {
     position: relative;
