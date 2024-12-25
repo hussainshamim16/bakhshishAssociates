@@ -196,11 +196,14 @@ div.ranger-two .box {
     position: sticky;
     padding: 0;
     z-index: 9999;
+    
 }
 
 .navbar {
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+ 
 }
+
 
 .navbar .dropdown-toggle::after {
     border: none;
@@ -216,6 +219,7 @@ div.ranger-two .box {
     transform: rotate(-180deg);
 }
 
+
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
@@ -224,6 +228,8 @@ div.ranger-two .box {
     text-transform: uppercase;
     outline: none;
 }
+
+
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
@@ -330,9 +336,9 @@ div.ranger-two .box {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF !important;
+    background: var(--dark) !important;
     border-radius: 50px;
-    border: 1px dashed var(--primary) !important;
+    border: 1px dashed var(--dark) !important;
 }
 
 
@@ -644,4 +650,10 @@ div.ranger-two .box {
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+@media (min-width: 1400px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+        max-width: 100%;
+    }
 }

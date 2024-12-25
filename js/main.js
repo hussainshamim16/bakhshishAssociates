@@ -103,3 +103,25 @@ const counter = setInterval(() => {
 
 // const subscribers = []
 // const email = document.getElementById('email')
+
+
+
+
+
+const Properties = document.getElementById("Properties")
+console.log(Properties)
+
+
+    `                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
+                                        <div
+                                            class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">
+                                            For Sell</div>
+                                        <div
+                                            class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">
+                                            Appartment</div>
+                                    </div>
+                                    `
+
+
+                                    // <div class="property-item rounded overflow-hidden">
