@@ -5,7 +5,7 @@ client
     .setProject('676ac5d800010ac1625c'); // Replace with your project ID
 console.log("Appwrite initialized:", client);
 
-// Initialize Database and Authentication
+// Initialize Database and Authentication and storage 
 const databases = new Appwrite.Databases(client);
 const account = new Appwrite.Account(client);
 const storage = new Appwrite.Account(client);
