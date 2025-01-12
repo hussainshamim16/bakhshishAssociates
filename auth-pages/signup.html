@@ -15,7 +15,48 @@
         <input type="password" placeholder="password" required id="password"> <br> <br>
         <button type="submit">signup</button>
     </form>
-    <script src="../js/appwritedatabase.js"></script>
 </body>
+<script>
+    // Initialize Appwrite
+    const client = new Appwrite.Client();
+    client
+        .setEndpoint('https://cloud.appwrite.io/v1') // Replace with your endpoint
+        .setProject('676ac5d800010ac1625c'); // Replace with your project ID
+    console.log("Appwrite initialized:", client);
+
+    // Initialize Database and Authentication and storage 
+    const account = new Appwrite.Account(client);
+
+    // Input fields
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+
+    // Add User Function
+    const AddUser = async (event) => {
+
+        const userObject = {
+            email: email.value,
+            password: password.value,
+        };
+
+        try {
+            // Create authentication
+            const authResponse = await account.create("unique()", userObject.email, userObject.password);
+            console.log("User created:", authResponse);
+            alert("User profile was created successfully!");
+
+            // Save user ID in localStorage
+            localStorage.setItem("userId", authResponse.$id);
+
+        } catch (error) {
+            console.error("Error Message:", error.message);
+            alert("Error: " + error.message);
+        }
+    };
+
+
+    email.value = ""
+    password.value = ""
+</script>
 
 </html>

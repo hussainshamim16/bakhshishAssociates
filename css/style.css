@@ -449,11 +449,19 @@ div.ranger-two .box {
     padding-right: 1.5rem;
 }
 
+.wit{
+    margin: 10px;
+    width: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(206, 206, 206);
+}
 @media (min-width: 576px) {
     .testimonial-carousel {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+    
 
     .carousalImg img {}
 
@@ -467,7 +475,10 @@ div.ranger-two .box {
         padding-left: 4rem;
         padding-right: 4rem;
     }
-
+.wit{
+    /* border: 1px solid red; */
+    width: 100%;
+}
     .fedral{
         /* background-color: red; */
         padding: 0px;
@@ -535,6 +546,7 @@ div.ranger-two .box {
         text-align: center;
 
     }
+  
 }
 
 .testimonial-carousel .testimonial-item .border {
@@ -656,4 +668,29 @@ div.ranger-two .box {
     .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
         max-width: 100%;
     }
+}
+
+
+/* blog app  */
+
+.property-item img {
+    width: 100%;
+    height: 400px; /* Apni requirement ke mutabiq height set karein */
+    object-fit: cover; /* Image ko container mein fit karne ke liye */
+}
+
+.property-item .title {
+    text-align: left;
+    font-size: 24px; /* Apni requirement ke mutabiq size set karein */
+    font-weight: bold;
+}
+
+.property-item .description {
+    text-align: left;
+    font-size: 16px; /* Apni requirement ke mutabiq size set karein */
+}
+.read-more{
+    border: none;
+    background-color: transparent;
+    color: red;
 }

@@ -10,9 +10,30 @@
 
 <body>
 
-        <button type="submit" onclick="logoutUser()">logout</button>
+    <button type="submit" onclick="logoutUser()">logout</button>
 
-    <script src="../js/appwritedatabase.js"></script>
 </body>
+<script>
+    // Initialize Appwrite
+    const client = new Appwrite.Client();
+    client
+        .setEndpoint('https://cloud.appwrite.io/v1') // Replace with your endpoint
+        .setProject('676ac5d800010ac1625c'); // Replace with your project ID
+    console.log("Appwrite initialized:", client);
+
+    // Initialize Database and Authentication and storage 
+    const account = new Appwrite.Account(client);
+
+    // Logout Function
+    const logoutUser = async () => {
+        try {
+            await account.deleteSession("current");
+            localStorage.removeItem("userId");
+            alert("Logout successful!");
+        } catch (error) {
+            console.error("Logout error:", error.message);
+        }
+    };
+</script>
 
 </html>

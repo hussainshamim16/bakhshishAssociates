@@ -17,7 +17,71 @@
         <input type="file" name="image" id="image"> <br> <br>
         <button type="submit">Create</button>
     </form>
-    <script src="../js/appwritedatabase.js"></script>
 </body>
+<script>
+    const client = new Appwrite.Client();
+    client
+        .setEndpoint('https://cloud.appwrite.io/v1') // Replace with your endpoint
+        .setProject('676ac5d800010ac1625c'); // Replace with your project ID
+    console.log("Appwrite initialized:", client);
+
+    // Initialize Database and Authentication and storage 
+    const databases = new Appwrite.Databases(client);
+    const account = new Appwrite.Account(client);
+    const storage = new Appwrite.Account(client);
+
+    // Add Blog Function
+const addBlog = async (event) => {
+    
+    const title = document.getElementById('title').value;
+    const description = document.getElementById('description').value;
+    const Category = document.getElementById('Category').value;
+    const image = document.getElementById('image').files[0]; // Get the selected image file
+
+    if (!image) {
+        alert("Please select an image!");
+        return;
+    }
+
+    try {
+        // Upload the image to Appwrite storage
+        const storage = new Appwrite.Storage(client);
+        const fileResponse = await storage.createFile(
+            "676c2d470014253071e3", // Replace with your Bucket ID
+            "unique()",
+            image
+        );
+        console.log("Image uploaded:", fileResponse);
+
+        // Generate the public URL for the uploaded image
+        const imageUrl = storage.getFileView(
+            "676c2d470014253071e3", // Your Bucket ID
+            fileResponse.$id       // Uploaded file ID
+        );
+        console.log("Image URL:", imageUrl);
+
+        // Prepare blog data
+        const blogData = {
+            title: title,
+            Category: Category,
+            description: description,
+            image: imageUrl, // Save the image URL in the database
+        };
+
+        // Add the blog data to the database
+        const response = await databases.createDocument(
+            "676ac68000297a211812", // Database ID
+            "676ac69d0026fcf60e67", // Collection ID
+            "unique()",
+            blogData
+        );
+        alert("Blog added successfully!");
+        console.log("Blog added:", response);
+    } catch (error) {
+        console.error("Error adding blog:", error.message);
+        alert("Error adding blog: " + error.message);
+    }
+};
+</script>
 
 </html>
