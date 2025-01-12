@@ -125,3 +125,11 @@ const counter = setInterval(() => {
 
 
                                     // <div class="property-item rounded overflow-hidden">
+
+
+
+                                    
+if (!localStorage.getItem('userId')) {
+    window.location.href = './auth.html';
+  
+}
