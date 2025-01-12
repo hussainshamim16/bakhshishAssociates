@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Login || Bakhshish </title>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.1"></script>
+
 <body>
-    
+    <form action="JavaScript:void(0)" method="get" onsubmit="login()">
+        <h1> Login Bakhshish </h1>
+        <input type="email" placeholder="Email" required id="loginemail"> <br> <br>
+        <input type="password" placeholder="password" required id="loginpassword"> <br> <br>
+        <button type="submit">login</button>
+    </form>
+    <script src="../js/appwritedatabase.js"></script>
 </body>
+
 </html>

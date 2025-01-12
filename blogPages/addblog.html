@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog || Bakhshish </title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.1"></script>
+
+<body>
+    <form action="JavaScript:void(0)" method="get" onsubmit="addBlog()">
+        <h1>Create Blog</h1>
+        <input type="text" placeholder="title" required id="title"> <br> <br>
+        <input type="Category" placeholder="Category" required id="Category"> <br> <br>
+        <input type="description" placeholder="description" required id="description"> <br> <br>
+        <input type="file" name="image" id="image"> <br> <br>
+        <button type="submit">Create</button>
+    </form>
+    <script src="../js/appwritedatabase.js"></script>
+</body>
+
+</html>

@@ -6,6 +6,16 @@ client
 console.log("Appwrite initialized:", client);
 
 // Initialize Database and Authentication and storage 
-const databases = new Appwrite.Databases(client);
-const account = new Appwrite.Account(client);
-const storage = new Appwrite.Account(client);
+// const databases = new Appwrite.Databases(client);
+// const account = new Appwrite.Account(client);
+// const storage = new Appwrite.Account(client);
+
+//sign up user
+const signupEmail = document.getElementById('signupEmail')
+const signuppassword = document.getElementById('signuppassword')
+
+
+function signup (e){
+    e.preventDefault()
+    console.log("hello Hussain")
+}

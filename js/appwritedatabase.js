@@ -13,10 +13,12 @@ const storage = new Appwrite.Account(client);
 // Input fields
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+// Input fields
+const loginemail = document.getElementById('loginemail');  
+const loginpassword = document.getElementById('loginpassword');
 
 // Add User Function
 const AddUser = async (event) => {
-
 
     const userObject = {
         email: email.value,
@@ -41,12 +43,8 @@ const AddUser = async (event) => {
 // Login Function
 const login = async (event) => {
 
-
-    const loginEmail = document.getElementById("Loginemail").value;
-    const loginPassword = document.getElementById("Loginpassword").value;
-
     try {
-        const session = await account.createEmailPasswordSession(loginEmail, loginPassword);
+        const session = await account.createEmailPasswordSession(loginemail.value, loginpassword.value);
         console.log("Login successful:", session);
         alert("Login successful!");
 
@@ -125,7 +123,7 @@ const addBlog = async (event) => {
 };
 
 
-//  fecth data
+// fecth data
 // Fetch Blogs Function
 const fetchBlogs = async () => {
     try {
@@ -136,7 +134,7 @@ const fetchBlogs = async () => {
         );
         console.log("Blogs fetched:", response.documents);
 
-        // Select the container where blogs will be rendered
+        // // Select the container where blogs will be rendered
         const blogContainer = document.getElementById('blog-container');
         blogContainer.innerHTML = ""; // Clear the container
 
