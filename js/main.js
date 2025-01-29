@@ -129,7 +129,4 @@ const counter = setInterval(() => {
 
 
                                     
-if (!localStorage.getItem('userId')) {
-    window.location.href = './auth.html';
-  
-}
+
