@@ -669,7 +669,7 @@
         function truncateText(text, maxLength, blogid) {
             if (text.length > maxLength) {
                 const truncated = text.substring(0, maxLength);
-                return `${truncated}... <a href="./blogPages/singleblog.html?id=${blogid}" class="read-more">Read More</a>`;
+                return `${truncated}... <a href="./singleblog.html?id=${blogid}" class="read-more">Read More</a>`;
             }
             return text;
         }
