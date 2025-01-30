@@ -3,7 +3,7 @@ import {
     // database
     db, collection, addDoc, getDocs, updateDoc, doc, deleteDoc, getDoc,
 
-} from "./firebase.js";
+} from "./js/firebase";
 
 const title = document.getElementById("title")
 const description = document.getElementById("description")
